@@ -1,0 +1,371 @@
+*{
+      margin:0;
+      padding:0;
+      text-decoration: none;
+      scroll-behavior: smooth;
+}
+body{
+      font-family: "Poppins", sans-serif;
+      font-weight: 400;
+      font-style: normal;  
+      background-color:black;
+      color:white;
+            font-family: "Space Mono", monospace;
+            font-weight: 400;
+            font-style: normal;
+            overflow-x: hidden;
+            
+      
+}
+nav{
+      display: flex;
+      justify-content: space-between;
+      height: 180px;;
+
+}
+
+nav img{
+      height:200px;
+      margin-left: 3%;
+      
+}
+.nav-link{
+     
+      font-size: 25px;
+      
+      margin-top:6%;
+      display:flex;
+      justify-content: space-around;
+      width:70%
+}
+.nav-link a{
+      color: black;
+}
+nav a{
+      height: 40%;
+      background:linear-gradient(to right ,#ff9900 50%,#ffffff 50%);
+      background-size: 200% 100%;
+      background-position: 100% 0;
+      -webkit-text-fill-color:transparent;
+      -webkit-background-clip:text;
+      
+      
+} 
+nav a:hover{
+      background-position: 0 0;
+      transition: 1s;
+      text-decoration:underline #ff9900 ;
+} 
+.home {
+      display:flex;
+      height:75vh;
+      
+}
+#name{
+      color: #ff9900;
+}
+
+.my-intro{
+      width:50%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap:30px;
+      align-items: center;
+      
+      font-size: 30px;;
+}
+ .button{
+      width:25%;
+      height: 10%;
+      transition: 0.5s;
+      font-family:"Space Mono", monospace ;
+      font-size: 20px;
+      font-weight: 640;
+      background-color: black;
+      position: relative;
+ }  
+ .btn{
+ color:white;
+ width:100%;
+
+ 
+ } 
+
+ a span{
+      position:absolute;
+      display: block;
+ }
+ .button:hover{
+      color:white;
+      background-color: hsl(36, 100%, 50%);
+      box-shadow: 0 0 5px #ff9900 ,0 0 14px #ff9900 ,0 0 25px #ff9900  ;
+      transition-delay: 0.1s;
+}
+
+.button:before{
+      content: '';
+      background: linear-gradient(to bottom,#ffffff 50% ,#ff9900 50%);
+      position: absolute;
+      top:0;
+      bottom:0;
+      left:0;
+      right:0;
+      transition: 0.5s;
+      z-index: -1;
+      margin:-3px;
+}
+.button:hover:before{
+      background: none;
+      background-color: black;
+}
+.photo{
+ width:45%;
+ position: absolute;
+}
+.photo img{
+      height: 100%;
+      position: absolute;
+      transform: translateX(-50%);
+}
+
+.photo img{
+      width: 800px;
+      height: 500px;
+      transition:0.5s;
+}
+.sec2{
+      text-align: center      ;
+}
+
+
+.shap{    
+      top:50px;
+      
+}
+.photo:hover .shap{
+      top:30px;
+      transition-delay: 0.3s;
+}
+.girl{
+      transition: 0.5s;
+      left:350px;
+}
+.photo:hover .girl{
+      left:320px;
+      transition-delay: 0.3s;
+      
+      
+}
+
+.skills{
+      width:85%;
+      margin:100px ;
+
+}
+
+
+.skillsbox{
+      margin:100px ;
+      min-width:100%;
+      display: flex;
+      flex-wrap: wrap;
+      gap:100px;
+      
+}
+.h{
+      text-align: center;
+      font-size: 2.5rem;
+      color: #ff9900;
+}
+.skillsbox div{
+      min-width: 150px;
+      height: 90px;
+      font-size: 1.5rem;
+      position: relative;
+      
+}
+
+
+.skill::before{
+      content: '';
+      background: linear-gradient(to right,#ffffff 50% ,#ff9900 50%);
+      position: absolute;
+      top:0px;
+      left:0px;
+      bottom:0px;
+      right:0px;
+      transition: 0.8s;
+      z-index: -2;
+      margin:-1.7px;
+}
+.skill:hover::before{
+      color:black;
+      
+      transition-delay: .2s;
+}
+.skill:hover p{
+      transform: scale(1.3);
+     color:#ff9900;
+      transition-delay: .2s;
+}
+.skill p{
+      width:100%;
+      height: 100%;
+      transition: 0.5s;
+      margin-top: 15%;
+}
+.skill{
+      background-color: black;
+      text-align: center;
+      
+     
+}
+
+.skill:hover:before{
+      background: none;
+      background-color: black;
+}
+
+
+.educon{
+      
+      width:100%;
+      height: 100%;
+      margin-top: 50px;
+      display: flex;
+      flex-wrap: wrap;
+      gap:30px;
+      justify-content: center;
+}
+.edu{
+      min-width:30%;
+      min-height: 50%;
+      padding: 20px;
+      font-size: 1rem;
+      line-height: 50px;
+      background-color: aliceblue;
+      color: black;
+      box-shadow: 4px 4px 10px grey , -4px -4px 10px grey;
+      
+      border: 1px solid pink;
+      border-radius: 20px;
+      transition: 0.3s;
+      
+}
+
+.edu:hover{
+      
+      box-shadow: 2px 2px 8px #ff9900 , -2px -2px 8px #ff9900;
+}
+.edu h1{
+      color: #ff9900;
+      font-size: 1.9rem;
+      transition: 0.5s;
+}
+.edu:hover h1{
+      color: black;
+      
+}
+
+.project{
+      margin-top: 50px;
+
+}
+.pro1{
+margin:30px;
+display: flex;
+}
+
+.pro1 img{
+      margin-left: 70px;
+      width: 700px;
+      height: 500px;
+}
+
+.dis{
+      padding: 10px;
+      padding-left: 60px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      font-size: 1.2rem;
+
+}
+.dis button {
+      margin-left: 25%;
+      
+}
+li{
+      margin-left: 10%;
+}
+button a{
+      color: #ffffff;
+}
+button{
+      border-radius: 10px;
+}
+.pro1{
+      margin-top: 140px;
+}
+
+.icon{
+      width:150px;
+      height: 150px;
+}
+
+.con
+{
+      
+      display: flex;
+      width: 90%;
+      justify-content: space-around;
+      margin: 80px;
+      
+}
+.con div{
+      border:1px solid grey;
+      box-shadow: 4px 4px 8px grey , -4px -4px 8px grey;
+      padding: 20px;
+      background-color: #ffffff;
+}
+
+.con div  h2{
+      text-align: center;
+      color: black;
+      margin-top: 10px;
+}
+
+form{
+      margin-left: 30%;
+      background-color: #ffffff;
+      height: 600px;
+      width: 600px;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 4px 4px 8px grey , -4px -4px 8px grey;
+      padding: 50px;
+      gap:20px;
+      align-items: center;
+      margin-bottom: 200px;
+
+}
+
+input{
+      width:500px;
+      height: 30px;
+      padding: 20px;
+      font-size: 26px;;
+}
+label{
+      color: black;
+      font-size: 2rem;
+      font-weight: 700;
+}
+.mess{
+      min-height: 200px;;
+}
+form button{
+      color:#ffffff
+}
